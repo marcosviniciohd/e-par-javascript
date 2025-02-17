@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+header {
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header .nivel {
+    display: flex;
+    align-items: center;
+}
+header .nivel label {
+    margin-right: 10px;
+}
+header select {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+header .timer {
+    font-size: 1.5em;
+}
+header .buttons {
+    display: flex;
+    gap: 10px;
+}
+header .buttons input[type="button"] {
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header .buttons input[type="button"]:hover {
+    background-color: darkviolet;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+main .number {
+    font-size: 30em;
+    color: black;
+}
+footer {
+    background-color: black;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+    justify-content: space-between;
+    padding: 20px 20px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+}
+footer .section {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+footer .section span {
+    color: yellow;
+    margin-right: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header .nivel, header .timer, header .buttons {
+        margin-bottom: 10px;
+    }
+    main .number {
+        font-size: 10em;
+    }
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .section {
+        margin-bottom: 10px;
+    }
+}

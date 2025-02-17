@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO É PAR?</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600;900&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <div class="nivel">
+            <label for="nivel">Nível:</label>
+            <select id="nivel" style="background-color: lightyellow;">
+                <option value="0">selecione</option>
+                <option value="1">Fácil</option>
+                <option value="2">Médio</option>
+                <option value="3">Difícil</option>
+            </select>
+        </div>
+        <div class="timer">Tempo: <span id="tempo">00:00</span></div>
+        <div class="buttons">
+            <input type="button" id="btnIniciar" value="INICIAR">
+            <input type="button" id="btnPausar" value="PAUSAR">
+            <input type="button" id="btnParar" value="PARAR">
+        </div>
+    </header>
+    <main>
+        <div class="number" id="numero">0</div>
+    </main>
+    <footer>
+        <div class="section">
+            <span>ACERTOS:</span>
+            <div><span id="acertos">0</span></div>
+        </div>
+        <div class="section">
+            <span>ERROS:</span>
+            <div><span id="erros">0</span></div>
+        </div>
+        <div class="section">
+            <span>Números pares sorteados:</span>
+            <div>0</div>
+        </div>
+    </footer>
+</body>
+</html>
